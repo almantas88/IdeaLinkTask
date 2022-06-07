@@ -8,6 +8,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
+app.get("/", (req, res) => {
+  
+    res.send({ text: "Idea Link task Almantas Gaižauskas" });
+  });
+  
+
 app.post("/", (req, res) => {
   str = req.body.text;
   newStr = "";
