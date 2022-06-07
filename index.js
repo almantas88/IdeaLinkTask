@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
   
 
 app.post("/", (req, res) => {
+    console.log(req.body);
   str = req.body.text;
   newStr = "";
   console.log("Original String: ", str);
