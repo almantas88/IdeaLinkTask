@@ -27,7 +27,7 @@ app.post("/", (req, res) => {
 
   console.log("After character removed: ", newStr);
 
-  res.send({ text: newStr });
+  return res.send({ text: newStr });
 });
 
 app.listen(process.env.PORT || 5000, () => {
