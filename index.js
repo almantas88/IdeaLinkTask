@@ -14,7 +14,6 @@ app.post("/", (req, res) => {
   console.log("Original String: ", str);
 
   for (let i = 0; i < str.length; i++) {
-    console.log(str[i]);
     if (str[i] !== req.body.letter) {
       newStr += str[i];
     }
